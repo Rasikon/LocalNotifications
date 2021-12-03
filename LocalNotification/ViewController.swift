@@ -13,20 +13,17 @@ public final class ViewController: UIViewController {
     @IBOutlet private weak var getPushButton: UIButton!
     
     
-    // MARK: Private propertise
-    private let appDelegate = UIApplication.shared.delegate as? AppDelegate
-    
-    
     // MARK: Lifecycle
     public override func viewDidLoad() {
         super.viewDidLoad()
         applyStyle()
+        NotificationsManager.shared.requestAuthorization()
     }
     
     
     // MARK: Actions
     @IBAction private func pressGetPushButton(_ sender: UIButton) {
-        launchAlert()
+        launchAlert(duration: 5)
     }
     
     
@@ -35,11 +32,11 @@ public final class ViewController: UIViewController {
         getPushButton.layer.cornerRadius = 10
     }
     
-    private func launchAlert() {
+    private func launchAlert(duration: Double) {
         let title = "Local Notification"
-        let alert = UIAlertController(title: title, message: "A notification will be sent in 10 seconds", preferredStyle: .alert)
+        let alert = UIAlertController(title: title, message: "A notification will be sent in \(duration) seconds", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { action in
-            self.appDelegate?.scheduleNotification(notificationType: title)
+            NotificationsManager.shared.createNotification(notificationType: title, durationInSeconds: duration)
         }
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)

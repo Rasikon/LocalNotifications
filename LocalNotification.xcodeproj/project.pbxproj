@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A29B0891275A0AA30096DA23 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29B0890275A0AA30096DA23 /* NotificationsManager.swift */; };
 		A2AA91AB2758BC11008CC4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA91AA2758BC11008CC4CB /* AppDelegate.swift */; };
 		A2AA91AD2758BC11008CC4CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA91AC2758BC11008CC4CB /* SceneDelegate.swift */; };
 		A2AA91AF2758BC11008CC4CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA91AE2758BC11008CC4CB /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A29B0890275A0AA30096DA23 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 		A2AA91A72758BC11008CC4CB /* LocalNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AA91AA2758BC11008CC4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2AA91AC2758BC11008CC4CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A29B088F275A07520096DA23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A29B0890275A0AA30096DA23 /* NotificationsManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		A2AA919E2758BC11008CC4CB = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		A2AA91A92758BC11008CC4CB /* LocalNotification */ = {
 			isa = PBXGroup;
 			children = (
+				A29B088F275A07520096DA23 /* Services */,
 				A2AA91AA2758BC11008CC4CB /* AppDelegate.swift */,
 				A2AA91AC2758BC11008CC4CB /* SceneDelegate.swift */,
 				A2AA91AE2758BC11008CC4CB /* ViewController.swift */,
@@ -140,6 +151,7 @@
 			files = (
 				A2AA91AF2758BC11008CC4CB /* ViewController.swift in Sources */,
 				A2AA91AB2758BC11008CC4CB /* AppDelegate.swift in Sources */,
+				A29B0891275A0AA30096DA23 /* NotificationsManager.swift in Sources */,
 				A2AA91AD2758BC11008CC4CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
