@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A202609D275FA42B00FC6198 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A202609C275FA42B00FC6198 /* Custom.swift */; };
 		A29B0891275A0AA30096DA23 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29B0890275A0AA30096DA23 /* NotificationsManager.swift */; };
 		A2AA91AB2758BC11008CC4CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA91AA2758BC11008CC4CB /* AppDelegate.swift */; };
 		A2AA91AD2758BC11008CC4CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AA91AC2758BC11008CC4CB /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A202609C275FA42B00FC6198 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 		A29B0890275A0AA30096DA23 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 		A2AA91A72758BC11008CC4CB /* LocalNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AA91AA2758BC11008CC4CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		A2026099275F9EE800FC6198 /* 333 */ = {
 			isa = PBXGroup;
 			children = (
+				A202609C275FA42B00FC6198 /* Custom.swift */,
 			);
 			path = 333;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				A2AA91AB2758BC11008CC4CB /* AppDelegate.swift in Sources */,
 				A29B0891275A0AA30096DA23 /* NotificationsManager.swift in Sources */,
 				A2AA91AD2758BC11008CC4CB /* SceneDelegate.swift in Sources */,
+				A202609D275FA42B00FC6198 /* Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
